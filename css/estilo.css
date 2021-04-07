@@ -1,3 +1,9 @@
 /*
 Arquivo externo para conter todos os estilos do exercício TERRA SUA LINDA.
 */
+
+#container {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #dbcfbf;
+}
