@@ -5,10 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERRA-SUA-LINDA</title>
+
+    <style>
+        /*
+        Estilizando seletores com ID:.
+        Utilize o # seguido do nome do seletor para utilizar este.
+        Ex: #container
+        */
+        #container {
+
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: #27201b9d;
+            height: 900px;
+        }
+
+        /*
+            Este seletor é um elemento HTML(div)
+        */
+        div {
+            /*Definindo a cor do Texto no elemento*/
+            color: #0000ff;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c8c1b7;
+        }
+
+        #p1 {
+            background-color: #a87c85;
+            color: #ccc;
+            font-size: 16px;
+        }
+
+        #box-text {
+            color: #0000ff;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c8c1b7;
+        }
+
+        #box-text-p1 {
+            color: #233f23;
+        }
+
+        #box-text-p2 {
+            color: #d2691e;
+        }
+
+        /*
+        Utilizando seletores CLASS.
+        Utilize o ( . ) seguido do nome do seletor.
+        Ex: .text-just{
+            ...
+        }
+        */
+        .text-just {
+            text-align: justify;
+            text-decoration: underline;
+        }
+
+        .text-all {
+            font-weight: bold;
+            color: #00ffff;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <div id="container">
+        CONTAINER
+
+        <div class="text-just text-all">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, accusantium quasi. Fuga ullam perferendis,
+            necessitatibus ducimus a atque harum voluptatibus illum sit fugiat nihil. Ex, minima. Illum molestiae ea
+            perspiciatis!
+        </div>
+
+        <p id="p1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quod molestias officiis, corporis earum
+            optio at
+            odio qui, iusto deleniti cumque accusantium sunt sit assumenda. Incidunt qui omnis dolorum velit?
+        </p>
+
+        <div id="box-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rerum eligendi illo! Eaque, vero provident
+            asperiores, quibusdam a, officia aut nulla laudantium tempora dolorum enim totam exercitationem sint nisi
+            consequuntur.
+            <p id="box-text-p1" class="text-just">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae optio sapiente
+                praesentium
+                dolor laboriosam ea harum nam, non voluptatum? Aliquam quaerat vero ad, nesciunt eligendi iure provident
+                quae obcaecati?
+            </p>
+            <p id="box-text-p2" class="text-all">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur est maxime praesentium cumque
+                unde tempora aspernatur rem voluptates aut numquam non, dolore dignissimos, amet nisi. Libero, unde.
+                Quas,
+                eum.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
