@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- PROF FEZ OS SELETORES ID E CLASS DO CSS INTERNO -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRA-SUA-LINDA</title>
+
+    <!-- Declaração de CSS interno -->
+    <!-- Depois que já abriu a div lá embaixo, pode colocar a div aqui no style, mas tem que lembrar de não colocar as aspas -->
+    <style>
+        /* Bloco de comentário no CSS é utilizando /*_*/
+        /* PROF: Este seletor é um elemento HTML (div) */
+        div{
+            /*Para utilizar a cor, deverá evitar deixar o nome da cor, é melhor trocar para o RGB ou hexadecimal*/
+            /*A cor que será definida é para a cor do texto no elemento*/
+            color: #0000ff;
+            /*Para alterar o tamanho da letra, a família da fonte, utiliza os comandos abaixo*/
+            font-size: 30px; /*Utiliza pixels ou ?*/
+            font-family: Arial, Helvetica, sans-serif; /*Uma fonte serifada fica com um pézinho nas pontas das letras*/
+            /*Ele aparece nessa ordem das fontes (separados por vírgula). Quando a máquina do usuário não tiver uma, utiliza a próxima*/
+            background-color: #c8c1b7;    
+            margin-left: 20%; /* Essas margens vão alterar tudo que é div*/
+            margin-right: 20%;        
+        }
+        /*Todo esse comando dentro da div vai alterar todos os conteúdos que tiverem dentro de div no body*/
+
+        /* PROF: Estilizando seletores com ID: Utilize a # seguido do nome do seletor para utilizar este. Ex.: #container */
+        /*Quando faz o comando referenciando o id, é essa que vai prevalecer. Mesmo que esse comando venha antes ou depois do da div dentro do style.
+        O comando para o id (que vem aqui no style como #), ele é sempre a prioridade*/
+        /*Dentro desses blocos (#), poderá dar o comando para tudo o que quiser (margem, fonte, fundo...). Não existem limitações*/
+        #container{
+            background-color: #d2691e;
+        }
+        
+        #p1{
+            background-color: #a87c85;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        #box-text{ /*esse bloco serve para todo o texto que está em box-text*/
+            color: #0000ff;
+            font-size: 30px; 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c8c1b7; 
+        }
+
+        #box-text-p1{ /*apesar desse bloco fazer parte de box-text, ele vai alterar apenas o que indicou com o "id" la no body*/
+            color: #233f23;
+        }
+
+        #box-text-p2{
+            color: #d2691e;
+        }
+        /*Então aqui nesses comandos acima, com os blocos, conseguiu mostrar que dá pra isolar os id. Mas é feito tudo na mão.*/
+
+        /*PROF: UTILIZANDO SELETORES CLASS. UTILIZE O (.) SEGUIDO DO NOME DO SELETOR. 
+        EX.: text-just{ 
+            ... 
+            }
+        */
+        .text-just{
+            text-align: justify; /*Texto justificado*/
+            text-decoration: underline; /*Texto sublinhado*/
+        }
+
+        .text-all{
+            font-weight: bold; /*Negrito*/
+            color: #00ffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Todos os arquivos html são um possível seletor dentro da declaração do CSS -->
+    <div id="container"> 
+        <!-- id é de identification. Ele é único e exclusivo dentro da DOM (Document Object Model) -->
+        <!-- não vai poder ter outro id com o nome container, ele é único e exclusivo -->
+        <!-- o id vai ser utilizado em html, css e js também -->
+        <!-- id nomeia e identifica um unico elemento. O class podera nomear e identificar uma classe de elementos, podendo ser de tipos diferentes -->
+        CONTAINER
+    </div>
+
+    <div class="text-just text-all"> <!-- Isso é uma multiclass: dentro de uma classe, tem 2 classes diferentes -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, commodi doloribus explicabo 
+        vero non qui placeat aliquam optio ducimus velit suscipit eligendi totam maxime ratione temporibus 
+        quia sapiente, laudantium quidem?
+    </div>
+
+    <p id="p1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque animi ipsam aliquam suscipit vitae 
+        officia voluptate, dicta ex debitis dolor odit consequuntur, nulla exercitationem enim est doloremque vero nemo. Tempora?
+    </p>
+
+    <div id="box-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, ipsam! Porro reprehenderit unde dolorum placeat officiis 
+        consectetur ad quod nostrum aperiam nam error, optio blanditiis harum omnis neque illum consequatur.
+        <p id="box-text-p1" class="text-just"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, laboriosam iure! Facere sequi tempore maxime illo 
+            sapiente consequuntur eligendi dolores architecto hic quasi! Voluptas maxime magni quis libero odit aliquid.
+        </p>
+        <p id="box-text-p2" class="text-all">
+        <!-- Nesses casos que tem o id e class, o comando que der la no style para id sempre prevalece -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et doloribus veniam culpa voluptates consectetur. Vero dolorum 
+            quas enim ea reiciendis nobis excepturi iste accusamus tempora dolores sed, velit eos? Laborum.
+        </p>
+    </div>
+
+</body>
+
+</html>
